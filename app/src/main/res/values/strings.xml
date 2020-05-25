@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GitHubApi</string>
+    <string name="title_toolbar_list_repo">Lista de repositórios</string>
+
+    <string name="avatar_description">Foto do usuário</string>
+    <string name="forks_description">Quantidade de forks: %s </string>
+    <string name="stargazers_count_description">Quantidade de estrelas: %s</string>
+    <string name="progress_bar_description">Carregando…</string>
+    <string name="back_description">Voltar</string>
+
+    <string name="date_count_description">Criado %s</string>
+    <string name="label_user_mr">Autor:</string>
+    <string name="label_attention">Atenção</string>
+    <string name="button_attention">Ok, Entendi!</string>
+
+    <string name="mr_empty_list">Não existem pull requests abertos para esse repositório.</string>
+    <string name="mr_error_list">Ocorreu um erro inesperado, tente novamente mais tarde.</string>
+    <string name="error_connection">Verifique sua conexão e tente novamente</string>
+
+    <string name="accessibility_list_count" formatted="false">Total de itens na lista %d</string>
+    <string name="accessibility_list_count_pull_requests" formatted="false">Total de pull requests é de %d</string>
+    <string name="accessibility_progress_bar">Aguarde, carregando…</string>
+
+</resources>

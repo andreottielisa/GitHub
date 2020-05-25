@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewVectorDrawable">
+        <attr name="drawableStartCompact" format="reference" />
+        <attr name="drawableStartTint" format="color" />
+    </declare-styleable>
+</resources>

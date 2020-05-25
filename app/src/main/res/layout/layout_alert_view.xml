@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp">
+
+    <ImageView
+        android:id="@+id/iconAlertView"
+        android:layout_width="@dimen/_70dp"
+        android:layout_height="@dimen/_70dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_error_red_24dp"
+        app:tint="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:id="@+id/labelAttention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/label_attention"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionAttention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:gravity="center"
+        tools:text="@tools:sample/lorem" />
+
+    <Button
+        android:id="@+id/buttonAttention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        android:text="@string/button_attention"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>
