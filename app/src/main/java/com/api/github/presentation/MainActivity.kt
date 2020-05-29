@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.api.github.R
 import com.api.github.domain.entities.RepoGitHubEntity
 import com.api.github.extensions.navigateTo
+import com.api.github.extensions.setupFragmentsAccessibility
 import com.api.github.extensions.show
 import com.api.github.presentation.fragment.ListRepoFragment
 import com.api.github.presentation.fragment.PullRequestsFragment
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupKoinFragmentFactory()
+        setupFragmentsAccessibility()
         setContentView(R.layout.activity_main)
         if (savedInstanceState != null) return
         showListRepo()

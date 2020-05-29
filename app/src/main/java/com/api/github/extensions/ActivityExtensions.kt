@@ -31,10 +31,10 @@ internal fun FragmentActivity.navigateTo(
     }
 }
 
-internal fun FragmentManager.setupForAccessibility() {
-    addOnBackStackChangedListener {
-        val lastFragmentWithView = fragments.lastOrNull { it.view != null }
-        for (fragment in fragments) {
+internal fun FragmentActivity.setupFragmentsAccessibility() {
+    supportFragmentManager.addOnBackStackChangedListener {
+        val lastFragmentWithView = supportFragmentManager.fragments.lastOrNull { it.view != null }
+        for (fragment in supportFragmentManager.fragments) {
             if (fragment == lastFragmentWithView) {
                 fragment.view?.importantForAccessibility =
                     View.IMPORTANT_FOR_ACCESSIBILITY_YES
@@ -56,5 +56,4 @@ internal fun FragmentManager.inTransaction(
             addToBackStack(tag)
         func().commit()
     }
-    setupForAccessibility()
 }
